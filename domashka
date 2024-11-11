@@ -1,0 +1,35 @@
+namespace domashka2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string продукт;
+            string количество;
+            string еденица_измерения;
+            string цена;
+
+            Console.Write("Введите название продукта: ");
+            продукт = Console.ReadLine().Trim().ToUpper();
+
+            Console.Write("Введите количество: ");
+            количество = Console.ReadLine().Trim();
+
+            Console.Write("Введите единицы измерения: ");
+            еденица_измерения = Console.ReadLine().Trim().ToLower();
+
+            Console.Write("Введите цену: ");
+            цена = Console.ReadLine();
+
+
+            Console.Clear();
+
+
+            Console.WriteLine("Информация о продукте:");
+            Console.WriteLine($"Название: {продукт}");
+            Console.WriteLine($"Количество: {количество}");
+            Console.WriteLine($"Единицы измерения: {еденица_измерения}");
+            Console.WriteLine($"Цена: {цена} за {еденица_измерения}");
+        }
+    }
+}
